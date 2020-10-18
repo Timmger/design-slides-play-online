@@ -1,18 +1,803 @@
-<!doctype html><html><head><meta charset=UTF-8><title>PORTFOLIO - By timmger</title><link rel=stylesheet href=//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css><link rel=stylesheet href=//cdn.staticfile.org/prism/1.15.0/themes/prism.min.css><link rel=stylesheet href=//cdn.staticfile.org/KaTeX/0.10.0-rc.1/katex.min.css><link href=./css/chunk-vendors.bb9a24e2.css rel=stylesheet></head><body><div><article id=webslides><section slide class="slide bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark"><span class="background dark" style="background-image:url('https://source.unsplash.com/C1HhAQrbykQ/')"></span><div class=wrap wrap=true><h1 class="text-landing text-shadow">PORTFOLIO</h1><p class=text-intro>By timmger</p><p><a href=https://github.com/Timmger class="button ghost" target=_blank><i class="fa fa-github"></i> Github</a></p></div></section></article></div><script src=//cdn.staticfile.org/echarts/4.1.0-release/echarts.min.js></script><script>window.pluginsOptions = {}
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timmger's Portofolio</title>
+    <meta name="description" content="Timmger's Protofolio">
+    <!-- Echarts -->
+    <script src="../static/js/echarts/echarts.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- 基础CSS -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/webslides.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/owl-carousel.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/animate.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/style.css">
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    let isPrintMode = false;
-    if(~location.search.indexOf('print-pdf')){
-        isPrintMode = true;
-        WebSlides.registerPlugin('scroll', function(){});
-    }
-    const ws = new WebSlides({
-        loop: false
-    })
-    window.wsInstance = ws;
-    if(isPrintMode){
-        ws.slides.forEach(s=>s.show())
-    }
-}, false)</script><script src=./js/chunk-vendors.4242874c.js></script><script src=./js/design.1a2b0e57.js></script></body></html>
+    <!-- 社交信息 -->
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://blog.timmger.website">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Timmger's Portofolio">
+    <!-- EDIT -->
+    <meta property="og:description" content="Timmger's Portofolio">
+    <!-- EDIT -->
+    <meta property="og:updated_time" content="2020-10-10T17:26:50">
+    <!-- EDIT -->
+    <meta property="og:image" content="../static/images/cover.png">
+    <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Timmger">
+    <!-- EDIT -->
+    <meta name="twitter:creator" content="@Timmger">
+    <!-- EDIT -->
+    <meta name="twitter:title" content="portfolio">
+    <!-- EDIT -->
+    <meta name="twitter:description" content="Timmger's Portofolio">
+    <!-- EDIT -->
+    <meta name="twitter:image" content="../static/images/cover.jpg">
+    <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+</head>
+<header role="banner">
+    <nav role="navigation">
+        <p class="nyt"><a href="../cv.html" title="CV">TIMMGER</a></p>
+        <ul>
+            <li style="margin-top: -50px;" class="dribble">
+                <a rel="external" href="https://github.com/Timmger" title="Github">
+                    <svg class="fa-github">
+                        <use xlink:href="#fa-github"></use>
+                    </svg>
+                    <em>Timmger</em>
+                </a>
+            </li>
+            <li class="twitter" style="margin-top: -50px;">
+                <a rel="external" href="http://blog.timmger.website" title="Website">
+                    <svg class=" fa-chrome">
+                        <use xlink:href="#fa-chrome"></use>
+                    </svg>
+                    <em>@Timmger</em>
+                </a>
+            </li>
+            <li class="dribbble" style="margin-top: -50px;">
+                <a rel="external" href="#" title="QQ">
+                    <svg class=" fa-qq">
+                        <use xlink:href="#fa-qq"></use>
+                    </svg>
+                    <em>Timmger</em>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main role="main">
+    <article id="webslides">
+        <section class="bg-trans-gradient">
+            <span class="background dark" style="background-image:url('https://i.loli.net/2020/10/15/MXnv6PYsyKeZENf.png')"></span>
+            <div class="wrap aligncenter">
+                <h1 style="font-family: myriad;" class="text-landing text-shadow fadeInUp slow">Portfolio</h1>
+                <p class="text-symbols">* * * </p>
+                <p><a class="button ghost" href="http://blog.timmger.website" title="访问我的博客"><svg class="fa-bookmark">
+                   <use xlink:href="#fa-bookmark"></use>
+                 </svg>TIMMGER</a>
+                </p>
+            </div>
+        </section>
+        <section class="aligncenter bg-trans-light">
+            <span class="background" style="background-image:url('https://i.loli.net/2020/10/15/vDGSKImkPLc539w.png');"></span>
+            <div class="wrap">
+                <h2 style="margin-bottom: 50px;font-family: myriad;" class="text-landing fadeInUp slow" class="text-landing"><strong>content</strong></h2>
+            </div>
+        </section>
+        <section>
+            <div class="wrap" style="margin-top: -65px;">
+                <h3 style="font-family: myraid;">Content.</h3>
+                <hr>
+                <ul class="flexblock gallery">
+                    <li>
+                        <a href="#" title="Sliding Chair">
+                            <figure>
+                                <div>
+                                    <img class="zoomIn" alt="show_item1?" src="../static/images/items/item1_1.png">
+                                    <span style="font-family: caviar_dreamsbold_italic; font-size: 175px; color:rgba(255,255,255,0.8); position: absolute;left:50%;top: 65%; transform: translate(-50%, -65%);">1</span>
+                                </div>
+                                <figcaption>
+                                    <h2 style="font-family: caviar_dreamsregular;">Sliding Chair</h2>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Poseidon">
+                            <figure>
+                                <div>
+                                    <img class="zoomIn" alt="show_item2?" src="../static/images/items/item2.png">
+                                    <span style="font-family: caviar_dreamsbold_italic; font-size: 175px; color:rgba(255,255,255,0.8); position: absolute;left:50%;top: 65%; transform: translate(-50%, -65%);">2</span>
+                                </div>
+                                <figcaption>
+                                    <h2 style="font-family: caviar_dreamsregular;">"Poseidon"</h2>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Space 09">
+                            <figure>
+                                <div>
+                                    <img class="zoomIn" alt="show_item3?" src="../static/images/items/item3.png">
+                                    <span style="font-family: caviar_dreamsbold_italic; font-size: 175px; color:rgba(255,255,255,0.8); position: absolute;left:50%;top: 65%; transform: translate(-50%, -65%);">3</span>
+                                </div>
+                                <figcaption>
+                                    <h2 style="font-family: caviar_dreamsregular;">"Space 09"</h2>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Other">
+                            <figure>
+                                <div>
+                                    <img class="zoomIn" alt="show_item4?" src="../static/images/items/item4.png">
+                                    <span style="font-family: caviar_dreamsbold_italic; font-size: 175px; color:rgba(255,255,255,0.8); position: absolute;left:50%;top: 65%; transform: translate(-50%, -65%);">4</span>
+                                </div>
+                                <figcaption>
+                                    <h2 style="font-family: caviar_dreamsregular;">"The other"</h2>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h1 style="font-family: Impact; font-size: 325px; color:rgba(145,145,145,0.2); margin-top: 10px;margin-left: -88px;font-weight: 100;">
+                01</h1>
+            <div style="margin-top:-65px;margin-left:-350px;background: linear-gradient(153deg, transparent 300px, rgb(247,249,251) 0);opacity: 1; width: 600px;height: 200px;">
+            </div>
+            <div style="margin-top:-155px;margin-left:15px;width: 210px; height: 47px; border-bottom: 3px solid #4698a6;position: absolute;transform: rotate(153deg);">
+            </div>
+            <div style="margin-top:-209px;margin-left: 120px;background: linear-gradient(153deg, transparent 51px,#4698a6 0);position:absolute;opacity: 1; width: 350px;height: 60px;">
+            </div>
+            <h3 style="font-family:'Noto Sans TC', sans-serif;margin-left:220px;margin-top: -210px;position: absolute;color: #fff;">
+                无障碍滑行椅</h3>
+            <h6 style="font-family:'Noto Sans TC', sans-serif;margin-top:-40px;margin-left: 120px;">“Sliding Chair”在潜在危险的特殊区<br>域架设一段“桥梁”，通过滑行的方式<br>方便下肢不便人群的活动。</h6>
+
+            <div class="wrap">
+                <img class="alignright" style="margin-top:-80px;margin-right: -70px;" src="../static/images/items/sc2.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="wrap">
+                <p style="font-family:'Noto Sans TC', sans-serif;" class="text-context text-uppercase"><strong>Research <span style="color:#4698a6;">Background</span><br>研究<span style="color:#4698a6;">背景</span></strong></p>
+                <div style="font-family: 'Noto Sans'; font-size: medium;" class="text-cols">
+                    <p>跌倒是我国伤害死亡的第四位原因，而在<strong style="color:#4698a6;">65岁以上</strong>的老年人中则为首位。 老年人跌倒死亡率
+                        <strong style="color:#4698a6;">随年龄的增加</strong>急剧上升。跌倒除了导致老年人死亡外，还导致大量残疾， 并且影响老年人的身心健康。
+                    </p>
+                    <p>我国已进入老龄化社会，65岁及以上老年人已达1.5亿。按<strong style="color:#4698a6;">30％的发生率</strong>估每年将有 4000多万老年人至少发生1次跌倒。严重威胁老年人的身心健康、日常活动及独立生活能力，也增加了家庭和社会的负担。
+                    </p>
+                </div>
+                <hr>
+                <div class="grid">
+                    <div class="column bottom">
+                        <h6>2000-2016年高龄人群(>=75岁)跌倒死亡人数(按性别每100000人)</h6>
+                    </div>
+                    <div class="column bottom">
+                        <h6>2000-2016年高龄人群(>=75岁)各年龄段跌倒死亡人数(每100000人)</h6>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="column">
+                        <div id="main" style="width: 500px;height:570px;"></div>
+                    </div>
+                    <div class="column">
+                        <div id="main2" style="width: 600px;height:600px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap">
+                <p style="font-family:'Noto Sans TC', sans-serif;" class="text-context text-uppercase"><strong>Design
+                        <span style="color:#4698a6;">Direction</span><br>设计<span
+                            style="color:#4698a6;">推敲</span></strong></p>
+                <div class="grid">
+                    <div class="column">
+                        <h6 style="color:#1d8499;">"高危地带"</h6>
+                        <p style="font-family: 'Noto Sans'; font-size: medium;">常见的特殊区域包括浴室、厨房、楼道等狭窄区域，这些地点是高龄者和残障人士跌倒的“高危地带”。</p>
+                        <figure>
+                            <img class="aligncenter" src="../static/images/items/sc5.png">
+                        </figure>
+                        <h6 style="color:#595899;">"潜在危险"</h6>
+                        <p style="font-family: 'Noto Sans'; font-size: medium;">昏暗的灯光，湿滑、不平坦的路面，在步行途中的障碍物，不合适的家具高度和摆放位置，楼梯台阶，卫生间没有扶拦、把手等都可能增加跌倒的危险。</p>
+                    </div>
+                    <div class="column">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <figure>
+                            <img class="aligncenter" src="../static/images/items/sc4.png">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h6 style="color:#409f8d;">"行动方式"</h6>
+                        <p style="font-family: 'Noto Sans'; font-size: medium;">步行或通过简单的辅助工具（拐杖或者轮椅）。</p>
+                        <br>
+                        <figure>
+                            <img class="aligncenter" src="../static/images/items/sc6.png">
+                        </figure>
+                        <br>
+                        <h6 style="color:#4e639c;">"干预措施"</h6>
+                        <p style="font-family: 'Noto Sans'; font-size: medium;">在这样的特殊区域架设一段“桥梁”，通过外界辅助方便下肢不便人群的活动。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="background-center">
+            <span class="background" style="background-image:url('../static/images/items/sc7.png');"></span>
+            <div class="wrap">
+                <div style="float: right; ">
+                    <h5 style="font-family:'Noto Sans TC', sans-serif;" class="text-context text-uppercase">
+                        <strong>Design
+                            <span style="color:#4698a6;">Analysis</span><br>设计<span
+                                style="color:#4698a6;">分析</span></strong></h5>
+                </div>
+                <div class="grid">
+                    <div class="column">
+                        <ul style="margin-top: 150px;margin-left: 50px;">
+                            <li>
+                                <span>Education</span>
+                                <h5>教育预防策略</h5>
+                                <p style="font-weight: bolder; font-family: 'Noto Sans'; font-size: medium;">
+                                    引导老年人学习一种新型特殊行动方式</p>
+                            </li>
+                            <li style="margin-top: 180px;">
+                                <h4 style="color: #4698a6;"><strong>“5E”伤害预防策略</h4></strong>
+                                    <p style="font-weight: bolder; font-family: 'Noto Sans'; font-size: medium;">
+                                        “5E”伤害预防综合策略的有效性在很多国家的应用实践中都得到证明，在减少与控制伤害发生与死亡方面发挥了重要作用。</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="column">
+                        <ul style="margin-left: 70px;margin-top: 50px;">
+                            <li>
+                                <span>Environment</span>
+                                <h5>环境改善策略</h5>
+                                <p style="font-weight: bolder; font-family: 'Noto Sans'; font-size: medium;">
+                                    在危险区域架设“桥梁”，来安全渡过。</p>
+                            </li>
+                            <li style="margin-top: 130px;">
+                                <span style="margin-left: -15px;color: #4171a2;">Engineering</span>
+                                <h5 style="color: #4171a2;">工程策略</h5>
+                                <p style="margin-left: -95px;font-weight: bolder; font-family: 'Noto Sans'; font-size: medium;">
+                                    借助日常人们熟悉了解的<br>产品为媒介进行改良设计</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul style="margin-top: 190px;">
+                            <li style=" margin-left: -40px;">
+                                <span>Enforcement</span>
+                                <h5>强化执法策略</h5>
+                                <p style="font-weight: bolder; font-family: 'Noto Sans'; font-size: medium;">
+                                    完善相关法规</p>
+                            </li>
+                            <li style="margin-top: 130px;margin-left: -80px;">
+                                <span>Evaluation</span>
+                                <h5>评估策略</h5>
+                            </li>
+                            <li style="margin-left: -305px;">
+                                <p style="font-weight: bolder; font-family: 'Noto Sans'; font-size: medium;">
+                                    不仅保障他们在危险区域活动的安全、方便<br>和舒适，还要力求与用户达到更好的交互</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gradient-gray">
+            <span class="background" style="background-image:url('../static/images/items/sc8_1.png')"></span>
+            <div class="wrap aligncenter ">
+                <div class="fadeInUp slow">
+                    <h1 style="font-family: 'Noto Sans TC';margin-top: -250px;" class="text-landing text-shadow ">需求決定設計
+                    </h1>
+                    <h6 style="font-size:smaller">*由于这样一个群体的要求，我们需要对室内活动方式进行特殊设计</h6>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap" style="margin-top: -60px;">
+                <p style="font-family:'Noto Sans TC', sans-serif;" class="text-context text-uppercase"><strong>Design
+                        <span style="color:#4698a6;">Specification</span><br>设计<span
+                            style="color:#4698a6;">说明</span></strong></p>
+                <div class="grid">
+                    <div class="column">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <figure>
+                            <img class="aligncenter size-70" src="../static/images/items/sc9.png">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <p style="font-family: 'Noto Sans'; font-size: medium; font-weight: bolder;"><span style="font-size: 4.2rem;line-height: 4.2rem;font-weight: 500;">.</span> 常见的特殊区域包括浴室、厨房、楼道等狭窄区域，这些地点是高龄者和残障人士跌倒的
+                            <span style="color:#1d8499;">“高危地带”</span>。</p>
+                        <p style="margin-top:-35px;font-family: 'Noto Sans'; font-size: medium; font-weight: bolder;"><span style="font-size: 4.2rem;line-height: 4.2rem;font-weight: 500;">.</span> “Sliding Chair”便是在这样的特殊区域架设一段<span style="color:#1d8499;">“桥梁”</span>，通过滑行的方式方便下肢不便人群的活动。</p>
+                        <p style="margin-top:-35px;font-family: 'Noto Sans'; font-size: medium; font-weight: bolder;"><span style="font-size: 4.2rem;line-height: 4.2rem;font-weight: 500;">.</span> “Sliding Chair”整体为不锈钢框架，椅面为皮革材质，柔软舒适， 座椅与靠背之间采用90°铰链连接，<span style="color:#1d8499;">可折叠收纳</span>，节省空间。</p>
+                        <p style="margin-top:-35px;font-family: 'Noto Sans'; font-size: medium; font-weight: bolder;"><span style="font-size: 4.2rem;line-height: 4.2rem;font-weight: 500;">.</span> “Sliding Chair”与滑轨之间以一对万向节连接，可实现<span style="color:#1d8499;">≥90°角</span>转向，整个辅助滑行装置以一段钢轨承接。</p>
+                        <p style="margin-top:-35px;font-family: 'Noto Sans'; font-size: medium; font-weight: bolder;"><span style="font-size: 4.2rem;line-height: 4.2rem;font-weight: 500;">.</span> “Sliding Chair”秉承着<span style="color:#1d8499;">无障碍设计</span>的原则，力求与用户达到更好的交互。</p>
+
+                        <figure style="margin-top:-65px;">
+                            <img class="aligncenter" src="../static/images/items/sc10.png">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap">
+
+                <div class="grid">
+                    <div style="margin-top: -60px;" class="column">
+                        <div>
+                            <p style="font-family:'Noto Sans TC', sans-serif;font-size: larger;float: left;" class="text-context text-uppercase"><strong><span
+                                        style="color:#4698a6;">Color+</span>Texture<br><span
+                                        style="color:#4698a6;">色彩</span>材质
+                                </strong></p>
+                        </div>
+                        <figure style="margin-top: -60px;">
+                            <img class="aligncenter" src="../static/images/items/sc11_1.png">
+                        </figure>
+                    </div>
+                    <div style="margin-top: -60px;" class="column">
+
+                        <div style="margin-top: 150px;">
+                            <p style="font-family:'Noto Sans TC', sans-serif;font-size: larger;float: right;" class="text-context text-uppercase">
+                                <strong>Product
+                                    <span style="color:#4698a6;">Details</span><br>产品<span
+                                        style="color:#4698a6;">细节</span></strong></p>
+                        </div>
+                        <figure style="margin-top: 60px;">
+                            <img class="alignright size-80" src="../static/images/items/sc12_1.png">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap">
+                <div class="grid">
+                    <div class="column" style="margin-left: 160px;margin-top: -10px;">
+                        <figure>
+                            <img class="aligncenter" src="../static/images/items/sc16.png">
+                        </figure>
+                        <figure style="margin-top: 40px;">
+                            <img class="aligncenter" src="../static/images/items/sc18.png">
+                        </figure>
+                        <figure style="margin-top: 40px;">
+                            <img class="aligncenter" src="../static/images/items/sc20.png">
+                        </figure>
+                    </div>
+                    <div class="column" style="margin-right: -200px;">
+                        <figure>
+                            <img class="aligncenter" src="../static/images/items/sc17.png">
+                        </figure>
+
+                        <figure style="width:90%;margin-top: 40px;">
+                            <img class="aligncenter" src="../static/images/items/sc19.png">
+                        </figure>
+                        <figure style="width:73%;margin-top: 60px;margin-left: 25px;">
+                            <img class="aligncenter" src="../static/images/items/sc21_1.png">
+                        </figure>
+
+                    </div>
+                    <div class="column">
+                        <div>
+                            <p style="font-family:'Noto Sans TC', sans-serif;font-size: larger;float: right;" class="text-context text-uppercase">
+                                <strong>Ergonomia/
+                                    <span style="color:#4698a6;">Dimensions</span><br>人机<span
+                                        style="color:#4698a6;">尺寸</span></strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap">
+                <div class="grid">
+                    <div class="column">
+                        <figure style="margin-left: 25px;">
+                            <img class="aligncenter" src="../static/images/items/sc22_1.png">
+                        </figure>
+                        <p style="font-size: medium; font-weight: bolder;">
+                            &emsp;&emsp;&emsp;&emsp;1.放下座椅</p>
+                    </div>
+                    <div class="column">
+                        <figure style="margin-top: 200px;">
+                            <img class="aligncenter" src="../static/images/items/sc23_1.png">
+                        </figure>
+                        <p style="font-size: medium; font-weight: bolder;">
+                            &emsp;&emsp;&emsp;&emsp;2.使用者转移</p>
+                    </div>
+                    <div class="column">
+                        <p style="font-family:'Noto Sans TC', sans-serif;font-size: larger;float: right;" class="text-context text-uppercase">
+                            <strong>Instruction
+                                <span style="color:#4698a6;">For Use</span><br>使用<span
+                                    style="color:#4698a6;">说明</span></strong>
+                        </p>
+                        <figure style="margin-top: 270px;margin-left: 25px;">
+                            <img class="aligncenter" src="../static/images/items/sc24_1.png">
+                        </figure>
+                        <p style="font-size: medium; font-weight: bolder;">
+                            &emsp;&emsp;&emsp;&emsp;3.辅助滑行</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <span class="background" style="background-image:url('../static/images/items/sc25.png')"></span>
+            <figure>
+                <img src="../static/images/items/sc26_1.png" alt="">
+            </figure>
+        </section>
+        <section>
+            <div class="warp">
+                <div class="grid">
+                    <div class="column">
+                        <h1 style="font-family: Impact; font-size: 325px; color:rgba(145,145,145,0.2); margin-top: 10px;margin-left: -110px;font-weight: 100;">
+                            02</h1>
+                        <div style="margin-top:-70px;margin-left:-350px;background: linear-gradient(153deg, transparent 300px, rgb(247,249,251) 0);opacity: 1; width: 570px;height: 200px;">
+                        </div>
+                        <div style="margin-top: 100px;margin-left:-10px;">
+                            <div style="margin-top:-149px;margin-left:15px;width: 210px; height: 47px; border-bottom: 3px solid #30586d;position: absolute;transform: rotate(153deg);">
+                            </div>
+                            <div style="margin-top:-209px;margin-left: 120px;background: linear-gradient(153deg, transparent 51px,#30586d 0);position:absolute;opacity: 1; width: 350px;height: 60px;">
+                            </div>
+                            <h3 style="font-family:'Noto Sans TC', sans-serif;margin-left:220px;margin-top: -210px;position: absolute;color: #fff;">
+                                海神号游轮</h3>
+                        </div>
+                        <h6 style="font-family:'Noto Sans TC', sans-serif;margin-top:-130px;margin-left: 120px;">
+                            海神号游轮波塞冬(Poseidon)作为海上征<br>服者，他象征着力量与威严，又带着西方<br>神话的浪漫主义色彩。</h6>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img style="margin-top: 120px;margin-left: 90px;" src="../static/images/items/cruise1_1.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light">
+            <span class=" background" style="background-image: url('../static/images/items/cruise2.png');"></span>
+            <div class="wrap">
+
+                <div style="transform: rotate(-38deg);position:absolute;">
+                    <h1 class="text-uppercase slideInLeft" style="animation-delay: 500ms;animation-fill-mode: backwards;margin-top:150px;margin-left:-100px;font-family: Impact; font-size: 220px;color: #e4e4e4;">environment</h1>
+                </div>
+
+                <div style="position: absolute;">
+                    <figure class="slideInLeft" style="animation-delay: 1s;animation-fill-mode: backwards;margin-left: -100px;margin-top: -300px;">
+                        <img src="../static/images/items/cruise3.png" alt="">
+                    </figure>
+                </div>
+                <div style="transform: rotate(-38deg);position:absolute;">
+                    <h1 class="text-uppercase slideInRight" style="margin-top:-290px;margin-left:240px;font-family: Impact; font-size: 120px;color: #31556a;">scenario</h1>
+                </div>
+                <div style="transform: rotate(-38deg);position:absolute;">
+                    <h1 class="text-uppercase slideInRight" style="margin-top:500px;margin-left:1120px;font-family: Impact; font-size: 120px;color: #97adb1;">cruise</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <span class="background" style="background-image: url('../static/images/items/cruise4_1.png');"></span>
+        </section>
+        <section>
+            <div class="wrap">
+                <img style="margin-top: -70px;" class="aligncenter size-70" src="../static/images/items/cruise5.png"></span>
+            </div>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/cruise6_1.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/cruise7_1.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/cruise8.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/cruise9.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/cruise10.png');"></span>
+        </section>
+        <section>
+            <div class="warp">
+                <div class="grid">
+                    <div class="column" style="margin-top: -60px;">
+                        <h1 style="font-family: Impact; font-size: 325px; color:rgba(145,145,145,0.2); margin-top: 10px;margin-left: -110px;font-weight: 100;">
+                            03</h1>
+                        <div style="margin-top:-70px;margin-left:-350px;background: linear-gradient(153deg, transparent 300px, rgb(247,249,251) 0);opacity: 1; width: 580px;height: 200px;">
+                        </div>
+                        <div style="margin-top: 100px;margin-left:-10px;">
+                            <div style="margin-top:-148px;margin-left:15px;width: 210px; height: 47px; border-bottom: 3px solid #dcaf3f;position: absolute;transform: rotate(153deg);">
+                            </div>
+                            <div style="margin-top:-209px;margin-left: 120px;background: linear-gradient(153deg, transparent 51px,#dcaf3f 0);position:absolute;opacity: 1; width: 350px;height: 60px;">
+                            </div>
+                            <h3 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;margin-left:245px;margin-top: -210px;position: absolute;color: #fff;">
+                                "Space 09"</h3>
+                        </div>
+                        <h6 style="font-family:'Noto Sans TC', sans-serif;margin-top:-130px;margin-left: 120px;">
+                            2050年，随着地球人口大爆炸，越来越多<br>的人类将移民火星，为了更好地了解和适<br>应这颗红色星球，早期的火星探索装备<br>将被淘汰。</h6>
+                    </div>
+                    <div class="column" style="margin-top: -50px;">
+                        <div>
+                            <figure style="position: absolute;">
+                                <img class="size-60 bounceInRight" style="margin-top: 300px;margin-left: 260px;" src="../static/images/items/mars2.png" alt="">
+                            </figure>
+                            <figure style="position: absolute;">
+                                <img class="size-60" style="margin-top: 375px;margin-right: 80px;" src="../static/images/items/mars1.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/mars3_1.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/mars4_1.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/mars5.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/mars6.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/mars7.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/mars8_1.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/mars9.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/mars10.png');"></span>
+        </section>
+        <section>
+            <div class="warp">
+                <div class="grid">
+                    <div class="column">
+                        <h1 style="font-family: Impact; font-size: 325px; color:rgba(145,145,145,0.2); margin-top: 10px;margin-left: -110px;font-weight: 100;">
+                            04</h1>
+                        <div style="margin-top:-70px;margin-left:-350px;background: linear-gradient(153deg, transparent 300px, rgb(247,249,251) 0);opacity: 1; width: 575px;height: 200px;">
+                        </div>
+                        <div style="margin-top: 100px;margin-left:-10px;">
+                            <div style="margin-top:-148px;margin-left:15px;width: 210px; height: 47px; border-bottom: 3px solid #a44345;position: absolute;transform: rotate(153deg);">
+                            </div>
+                            <div style="margin-top:-209px;margin-left: 120px;background: linear-gradient(153deg, transparent 51px,#a44345 0);position:absolute;opacity: 1; width: 350px;height: 60px;">
+                            </div>
+                            <h3 style="font-family:'Noto Sans TC', sans-serif;margin-left:220px;margin-top: -210px;position: absolute;color: #fff;">
+                                其他展示</h3>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img style="margin-top: 220px;margin-left: 30px;" src="../static/images/items/other.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap">
+                <p style="font-family:'Noto Sans TC', sans-serif;" class="text-context text-uppercase"><strong>New energy
+                        <span style="color:#a44345;">logistics vehicle</span><br>新能源<span
+                            style="color:#a44345;">物流车</span></strong></p>
+                <figure>
+                    <img class="aligncenter" src="../static/images/items/sketch.png">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="wrap">
+                <p style="font-family:'Noto Sans TC', sans-serif;" class="text-context text-uppercase"><strong>New energy
+                        <span style="color:#a44345;">logistics vehicle</span><br>新能源<span
+                            style="color:#a44345;">物流车</span></strong></p>
+                <figure>
+                    <img class="aligncenter" src="../static/images/items/vh1.png">
+                </figure>
+            </div>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/vh2.jpg');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/vh3.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/vh4.png');"></span>
+        </section>
+        <section class="bg-light">
+            <span class="background" style="background-image: url('../static/images/items/vh5.png');"></span>
+        </section>
+    </article>
+</main>
+
+<!-- echart -->
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    option = {
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['所有', '女', '男']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        toolbox: {},
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['2000', '2002', '2004', '2006', '2008', '2010', '2012', '2014', '2016']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [{
+            name: '所有',
+            type: 'line',
+            data: [51.6, 61.8, 72.1, 82.1, 93.0, 101.3, 108.9, 116.2, 122.2]
+        }, {
+            name: '女',
+            type: 'line',
+            data: [46.3, 57.5, 65.6, 76.2, 85.2, 92.8, 103.2, 111.5, 116.2]
+        }, {
+            name: '男',
+            type: 'line',
+            data: [60.7, 75.1, 82.8, 93.4, 105.4, 110.3, 117.6, 131.8, 130.9]
+        }]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+<script>
+    var myChart = echarts.init(document.getElementById('main2'));
+
+    setTimeout(function() {
+
+        option = {
+            legend: {},
+            tooltip: {
+                trigger: 'axis',
+                showContent: false
+            },
+            dataset: {
+                source: [
+                    ['age', '2000', '2004', '2008', '2012', '2016'],
+                    ['75-79岁', 22.1, 30.1, 37.2, 38.7, 42.1],
+                    ['80-84岁', 44.1, 62.2, 74.6, 84.4, 88.9],
+                    ['85-89岁', 83.8, 115.0, 143.4, 156.2, 171.2],
+                    ['90-94岁', 150.4, 204.5, 258.2, 306.4, 367.5],
+                    ['>=95岁', 217.7, 301.0, 383.4, 504.3, 630.8]
+                ]
+            },
+            xAxis: {
+                type: 'category'
+            },
+            yAxis: {
+                gridIndex: 0
+            },
+            grid: {
+                top: '55%'
+            },
+            series: [{
+                type: 'line',
+                smooth: true,
+                seriesLayoutBy: 'row'
+            }, {
+                type: 'line',
+                smooth: true,
+                seriesLayoutBy: 'row'
+            }, {
+                type: 'line',
+                smooth: true,
+                seriesLayoutBy: 'row'
+            }, {
+                type: 'line',
+                smooth: true,
+                seriesLayoutBy: 'row'
+            }, {
+                type: 'line',
+                smooth: true,
+                seriesLayoutBy: 'row'
+            }, {
+                type: 'pie',
+                id: 'pie',
+                radius: '30%',
+                center: ['50%', '25%'],
+                label: {
+                    formatter: '{b}: {@2000} ({d}%)'
+                },
+                encode: {
+                    itemName: 'age',
+                    value: '2000',
+                    tooltip: '2000'
+                }
+            }]
+        };
+
+        myChart.on('updateAxisPointer', function(event) {
+            var xAxisInfo = event.axesInfo[0];
+            if (xAxisInfo) {
+                var dimension = xAxisInfo.value + 1;
+                myChart.setOption({
+                    series: {
+                        id: 'pie',
+                        label: {
+                            formatter: '{b}: {@[' + dimension + ']} ({d}%)'
+                        },
+                        encode: {
+                            value: dimension,
+                            tooltip: dimension
+                        }
+                    }
+                });
+            }
+        });
+
+        myChart.setOption(option);
+
+    });
+</script>
+<!-- Required -->
+<script src="../static/js/webslides.js"></script>
+
+<script>
+    window.ws = new WebSlides();
+</script>
+
+<!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+<script defer src="../static/js/svg-icons.js"></script>
+
+</html>
